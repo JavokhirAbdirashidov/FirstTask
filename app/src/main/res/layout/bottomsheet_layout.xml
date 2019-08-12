@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/bottom_sheet"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingStart="24dp"
+              android:paddingEnd="24dp"
+              android:background="@android:color/white"
+              app:behavior_hideable="false"
+              app:behavior_peekHeight="80dp"
+              app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <View
+            android:layout_marginTop="6.05dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:background="#FFDEDEDE"
+    />
+<include layout="@layout/first_row"/>
+<include layout="@layout/second_row"/>
+<include layout="@layout/third_row"/>
+    <include layout="@layout/fourth_row"/>
+    <include layout="@layout/fifth_row"/>
+</LinearLayout>
